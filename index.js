@@ -27,12 +27,12 @@ userName2()
 /* - Exercici 2
 Invoca una funció que retorni un valor des de dins d'una template literal. */
 
-function returnValue(value){
-
-    const result = (`El valor és : ${value}`)
-    console.log(result)
+function userName3(name) {
+    return name
+    
 }
-returnValue("hola")
+console.log(`El nom que retorna és ${userName3("Joan")}`)
+
 
 /* Nivell 3
 - Exercici 1
