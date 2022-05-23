@@ -34,8 +34,23 @@ console.log(`El nom que retorna és ${userName3("Joan")}`);
 Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 per la consola.
  Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 al 9 deu vegades. */
 
+let array = []
+let sum = 0
+function toCounter(){
+  for (i = 0; i < 10; i++){
+sum += sum(i)
 
+  }
+  
+}
 
+  /*   for(let counter = 0; counter < 10;counter ++){
+
+      array.push(counter)
+     
+    } */
+
+    
  
 
 /* - Exercici 2
