@@ -34,3 +34,8 @@ Invoca una funció que retorni un valor des de dins d'una template literal. */
 - Exercici 1
 Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 per la consola.
  Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 al 9 deu vegades. */
+
+
+
+ /* - Exercici 2
+Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari rebut com a paràmetre. */
