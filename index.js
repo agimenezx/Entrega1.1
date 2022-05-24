@@ -4,7 +4,7 @@ Crea una funció que mostri per consola el nom d'usuari al invocar-la passant-li
  */
 
 function userName1(name) {
-  console.log(name);
+    console.log(name);
 }
 userName1("Albert");
 
@@ -13,10 +13,10 @@ userName1("Albert");
 Mostra per consola el nom i cognoms de l'usuari mitjançant template literals, guardant-los en variables i referenciant-les en la impressió del missatge. */
 
 function userName2() {
-  const name = "Albert";
-  const surName = "Giménez";
+    const name = "Albert";
+    const surName = "Giménez";
 
-  console.log(`Nom: ${name} Cognoms: ${surName}`);
+    console.log(`Nom: ${name} Cognoms: ${surName}`);
 }
 
 userName2();
@@ -25,7 +25,7 @@ userName2();
 Invoca una funció que retorni un valor des de dins d'una template literal. */
 
 function userName3(name) {
-  return name;
+    return name;
 }
 console.log(`El nom que retorna és ${userName3("Joan")}`);
 
@@ -34,24 +34,25 @@ console.log(`El nom que retorna és ${userName3("Joan")}`);
 Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 per la consola.
  Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 al 9 deu vegades. */
 
-let array = []
-let sum = 0
-function toCounter(){
-  for (i = 0; i < 10; i++){
-sum += sum(i)
+ let array = []
 
-  }
-  
-}
-
-  /*   for(let counter = 0; counter < 10;counter ++){
-
-      array.push(counter)
-     
-    } */
-
+ function toCounter() {
     
- 
+    for (let i = 0; i< 10; i++) {
+      console.log (i)
+    }
+    
+ }
+
+  for(let counter = 0; counter < 10;counter ++){
+
+    array.push(toCounter) 
+    toCounter()
+ } 
+    
+console.log (array) 
+for (let value of array) value(); 
+
 
 /* - Exercici 2
 Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari rebut com a paràmetre. */
