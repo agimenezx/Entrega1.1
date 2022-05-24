@@ -58,9 +58,9 @@ for (let value of array) value();
 Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari rebut com a paràmetre. */
 
 const seeName = (function (name) {
-    return name
+    console.log(name)
 })("Jordi");
 
-console.log(seeName)
+
 
 
