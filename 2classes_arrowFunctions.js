@@ -19,9 +19,28 @@ Crea una arrow function que, rebent un paràmetre, retorni un objecte amb un atr
 
 let object = (yourName) => ({
 
- yourName:yourName
+    yourName: yourName
 
 })
 console.log(object("Albert"))
 
+/* - Exercici 2
+Crea una classe Persona que rebi un paràmetre 'nom' al ser instanciada. La classe inclourà un mètode dirNom que imprimeixi per consola el paràmetre 'nom'.
+ Invoca el mètode dirNom des de fora de la classe.*/
 
+class Person {
+    #name
+    constructor(name) {
+        this.#name = name
+    }
+
+    /* get Name() {
+        return this.#name
+    }  *///és el mateix o fa el mateix que sayName
+    sayName(name) {
+        console.log(`El meu nom és:${this.#name}`)
+    }
+
+}
+const myName = new Person("Albert")
+myName.sayName() 
