@@ -43,4 +43,19 @@ class Person {
 
 }
 const myName = new Person("Albert")
-myName.sayName() 
+myName.sayName()
+
+/* Nivell 3
+- Exercici 1
+Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta. Invoca-la amb diferents definicions.
+ */
+
+
+function Computer(brand, model) {
+    this.brand = brand
+    this.model = model
+}
+
+let myComputer = new Computer("HP", "3000")
+console.log("HP"instanceof Computer)
+
