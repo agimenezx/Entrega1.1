@@ -11,9 +11,9 @@ function getPromise() {
       year:"2022"
     };
     if (myPhone.year === "2022") {
-      res("Producte satisfactori, tens un bon mòbil 👌");
+      res(`Producte satisfactori, tens un bon mòbil ${myPhone.name} 👌`);
     } else {
-      rej("Fracàs absolut, mòbil antic 😜");
+      rej(`Fracàs absolut,el teu ${myPhone.name} és mòbil antic 😜`);
     }
   });
 }
