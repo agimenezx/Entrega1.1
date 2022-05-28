@@ -25,4 +25,25 @@ getPromise()
     console.log(`OHHHHHH ${err}`);
   });
 
+/* - Exercici 2
+Crea una arrow function que rebi un paràmetre i una funció callback i li passi a la funció un missatge o un altre 
+(que s'imprimirà per consola) en funció del paràmetre rebut. */
+
+
+const arrow = (myName,function(err){
   
+  } =>{
+    if(err){
+    console.log (err)
+  }
+  else{
+    console.log (`Aquest és el meu nom${myName}`) ("Albert") 
+  
+  }
+
+
+
+console.log(
+  ((a, b) => {
+    return a + b;
+  })(5, 5)
