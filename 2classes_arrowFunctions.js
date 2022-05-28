@@ -50,7 +50,7 @@ myName.sayName()
 Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta. Invoca-la amb diferents definicions.
  */
 
-
+//NO SÉ FER-HO 🤷‍♀️
 function Computer(brand, model) {
     this.brand = brand
     this.model = model
