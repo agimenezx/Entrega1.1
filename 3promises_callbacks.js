@@ -94,8 +94,8 @@ const getEmployee = (employeesId) => {
   });
 };
 getEmployee(2)
-  .then((message) => {
-    console.log(`Aquí tens"😀 ${message}`);
+  .then((message1) => {
+    console.log(`Aquí tens"😀 ${message1}`);
   })
   .catch((err) => {
     console.log(`Error:😱😱😱 ${err}`);
@@ -116,10 +116,23 @@ const getSalary = (employee) => {
   });
 };
 getSalary(1)
-  .then((message) => {
-    console.log(`Aquí tens"😀 ${message}`);
+  .then((message2) => {
+    console.log(`Aquí tens"😀 ${message2}`);
   })
   .catch((err) => {
     console.log(`Error:😱😱😱 ${err}`);
   });
+
+/* - Exercici 3
+Invoca la primera funció getEmployee() i després getSalary() niant l'execució de les dues promises 
+de manera que es retorni per la consola el nom de l'empleat i el seu salari.
+ */
+
+getEmployee(2)
+  .then((message1) => {
+    getSalary(message1)
+    .then((message2)=>{
+      console.log (`${message1.name} ${message2.salary}`)
+    })
+  })
 
