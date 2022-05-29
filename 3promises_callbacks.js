@@ -93,10 +93,10 @@ const getEmployee = (employeesId) => {
     }
   });
 };
-getEmployee(1)
+getEmployee(2)
   .then((message) => {
-    console.log(`Aquí tens"${message}`);
+    console.log(`Aquí tens"😀 ${message}`);
   })
   .catch((err) => {
-    console.log(`Error: ${err}`);
+    console.log(`Error:😱😱😱 ${err}`);
   });
