@@ -100,3 +100,26 @@ getEmployee(2)
   .catch((err) => {
     console.log(`Error:😱😱😱 ${err}`);
   });
+
+/* - Exercici 2
+Crea una altra arrow function getSalary() similar a l'anterior que rebi com a paràmetre un objecte employee 
+i retorni el seu salari. */
+
+const getSalary = (employee) => {
+  return new Promise((res, rej) => {
+    let totalSalary = salaries.find((element) => element.id == employee);
+    if (totalSalary) {
+      res(`El teu salari és ${totalSalary.salary}`);
+    } else {
+      rej(`No existeix cap salari`);
+    }
+  });
+};
+getSalary(1)
+  .then((message) => {
+    console.log(`Aquí tens"😀 ${message}`);
+  })
+  .catch((err) => {
+    console.log(`Error:😱😱😱 ${err}`);
+  });
+
