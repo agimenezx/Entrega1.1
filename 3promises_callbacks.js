@@ -53,45 +53,50 @@ console.log(calculate(10, doubleNumber));
 Donats els objectes employees i salaries, crea una arrow function getEmployee() que retorni una Promise 
 efectuant la cerca en l'objecte pel seu id. */
 
-let employees = [{
+let employees = [
+  {
     id: 1,
-    name: 'Linux Torvalds'
-}, {
+    name: "Linux Torvalds",
+  },
+  {
     id: 2,
-    name: 'Bill Gates' 
-},{
+    name: "Bill Gates",
+  },
+  {
     id: 3,
-    name: 'Jeff Bezos'
-}];
- 
-let salaries = [{
-    id: 1,
-    salary: 4000
-}, {
-    id: 2,
-    salary: 1000
-}, {
-    id: 3,
-    salary: 2000
-}];
+    name: "Jeff Bezos",
+  },
+];
 
-const getEmployee = () =>{
+let salaries = [
+  {
+    id: 1,
+    salary: 4000,
+  },
+  {
+    id: 2,
+    salary: 1000,
+  },
+  {
+    id: 3,
+    salary: 2000,
+  },
+];
+
+const getEmployee = (employeesId) => {
   return new Promise((res, rej) => {
-
-    if(employees.id === 1 || employees.id === 2|| employees.id === 3){
-      res (`El nom del teu empleat és:${employees.name}`)
+    let foundEmployee = employees.find((element) => element.id == employeesId);
+    if (foundEmployee) {
+      res(`El nom del teu empleat és ${foundEmployee.name}`);
+    } else {
+      rej(`No existeix cap persona`);
     }
-    else {
-      rej(`No existeix cap persona`)
-    }
-   })
-  }
-  getEmployee()
-  .then(message =>{
-    console.log (`Aquí tens"${message}`)
+  });
+};
+getEmployee(1)
+  .then((message) => {
+    console.log(`Aquí tens"${message}`);
   })
-  .catch(err=>{
-    console.log(`Error: ${err}`)
-  })
-  
-
+  .catch((err) => {
+    console.log(`Error: ${err}`);
+  });
