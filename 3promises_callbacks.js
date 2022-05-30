@@ -115,7 +115,7 @@ const getSalary = (employee) => {
     }
   });
 };
-getSalary(1)
+getSalary(4)
   .then((message2) => {
     console.log(`Aquí tens"😀 ${message2}`);
   })
@@ -130,9 +130,10 @@ de manera que es retorni per la consola el nom de l'empleat i el seu salari.
 
 getEmployee(2)
   .then((message1) => {
-    getSalary(message1)
+    getSalary(2)
     .then((message2)=>{
       console.log (`${message1.name} ${message2.salary}`)
     })
   })
 
+//No sé el motiu pel qual falla, surt undefined!!!
